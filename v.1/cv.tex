@@ -1,0 +1,230 @@
+
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\usepackage{fontawesome}% <=============================================
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\setlength{\textwidth}{5.5in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Mateusz Kapusta} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ 
+\moveleft.5\hoffset\centerline{Astronomical Observatory, University of Warsaw, Al. Ujazdowskie 4, 00-478 Warsaw,Poland}
+\moveleft.5\hoffset\centerline{\href{https://github.com/Wesenheit}{\faGithubSquare https://github.com/Wesenheit}}
+%\moveleft.5\hoffset\centerline{\href{https://wesenheit.github.io/}{Blog website}}
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+\section{PROFILE}
+\begin{wrapfigure}{1}{0.4\textwidth}
+    \includegraphics[width = 0.35\textwidth]{self1.jpg}
+\end{wrapfigure}
+I am a Master's student currently studying at the Faculty of Physics, University of Warsaw. I completed my Bachelor's thesis under supervision of  Przemysław Mróz at the 
+Warsaw University Observatory. I graduated from the collage of Inter-Faculty Individual Studies, where I had an opportunity to take different courses including 
+specialized lectures for Mathematics and Computer Science majors.
+During my studies I had an opportunity to work on different aspects of Astrophysics, ranging from observational projects to 
+theoretical ones. Currently I work with Krzysztof Nalewajko (Nicolaus Copernicus Astronomical Center - NCAC), investigating astrophysical jets launched from 
+Supermassive Black Holes with the help of numerical simulations.
+In free time I like to explore Machine Learning based methods applied in the field of Natural Sciences,
+solving problems across different domains from Bioinformatics to Astronomy.
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+ 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\par
+\vspace{1cm}
+\section{EDUCATION}
+
+{\sl Master of Science, \textbf{2023-2025} (expected)}\\
+Master of Science in Astronomy\\
+Warsaw University Observatory, Faculty of Physics\\
+
+{\sl Bachelor of Science, \textbf{2020-2023}}\\
+Inter-faculty Individual Studies in Mathematics and Natural Sciences, University of Warsaw, Poland\\
+Grade:  4.96/5 (2-5 scale, 5 is highest), graduated with distinctions\\
+Major: Astronomy, Physics\\
+Minor: Mathematics, Computer Science \par
+\vspace{0,3cm}
+{\sl High School, \textbf{2017-2020}}\\
+IIIrd Secondary School, Wroclaw, Poland\\
+%graduation date: 2020\\
+grade: 5.00 (1-6) scale\\
+graduated with distinctions
+
+\section{EXPERIENCE}
+
+{\sl Student research assistant, Nicolaus Copernicus Astronomical Center}\hfill April 2023 - present\\
+Working under supervision of Krzysztof Nalewajko (NCAC).
+Project in cooperation with Bart Ripperda (CITA, Toronto) and Alexander Philippov (University of Maryland).
+\begin{itemize}
+    \item Working with extreme resolution Magnetohydrodynamical (MHD) simulations created with H-AMR code.
+    \item Studying stability of a astrophysical jets launched from black holes.
+    \item Investigating influence of magnetic flux eruptions, associated with Magnetically Arrested Discs (MAD), on the properties of the jet. 
+\end{itemize} 
+
+
+{\sl Student research assistant at Astronomical Observatory} \hfil November 2022 - present\\
+Student position in grant 2021/41/B/ST9/00252, working under the supervision of Przemysław Mróz.
+\begin{itemize}
+    \item Performing MCMC modelling of microlensing events discovered as the part of $4$th phase of the OGLE project.
+    \item Investigating Free Floating Planet (FFP) microlensing event OGLE-2023-BLG-0524. Working on theoretical modelling, analysing legacy Hubble Space Telescope (HST)
+    photometry, performing detectability simulations in order to verify FFP hypothesis.
+    \item Research resulted in 4th-author publication in ApJS, currently preparing first author publication about OGLE-2023-BLG-0524 event.
+\end{itemize}
+
+
+
+{\sl Bachelor's Thesis at Warsaw University Astronomical Observatory} \hspace*{0.1cm} July 2022 - July 2023\\
+Working under the supervision of dr Przemysław Mróz on the data analysis from the OGLE survey to search for Dormant Black Hole candidates.
+\begin{itemize}
+    \item Analysing OGLE data using the method introduced in Gomel et al. \href{https://arxiv.org/abs/2008.11209}{2021} 
+    \item Designing Python based MCMC code to assemble spectral energy distribution (SED) for candidate objects.
+    \item Inference of the parameters of binaries using the OGLE and Gaia DR3 data, searching for compact companion stars.
+    \item Project resulted in first-author paper accepted in Acta Astronomica.
+\end{itemize}
+
+
+
+{\sl Intern at Nicolaus Copernicus Astronomical Center}\hfill July 2022 - October 2022\\
+Project: "Measuring the structure of relativistic jets in numerical simulation results" under the supervision of Krzysztof Nalewajko (NCAC) and prof. Agnieszka Janiuk (CFT PAN).
+\begin{itemize}
+    \item Worked with results from HARM MHD code to study the structure of magnetically arrested discs.
+    \item Developed a few Python routines to search for magnetic reconnection and other interesting magnetic phenomena.
+    \item Work accomplished during the internship resulted in second-author publication submitted to Astronomy \& Astrophysics (in revision).
+\end{itemize}
+
+{\sl Intern at Nicolaus Copernicus Astronomical Center}\hfill July 2021 - October 2023\\
+Project: "Energy of a Strange Quark Star" under the supervision of Fatemeh Kayanikhoo  and dr M. Cemeljic
+\begin{itemize}
+    \item Worked with LORENE library to study the structure of relativistic strange quark stars, ported part of functions to work with 
+    C++17 standard and MPI multithread environment.
+    \item Developed Python code to calculate the external energy of a star contained in a magnetic field.
+    \item Developed multi-threaded C++ code to calculate the equation of state of the magnetized strange matter.
+\end{itemize}
+
+%{\sl Workshop at Faculty of Physics Warsaw University}\hfill Spring 2020\\
+%Project: "Collisions of ultra-cold particles" under the supervision of dr hab. Michał Tomza
+%\begin{itemize}
+%    \item Developed code (in Python) solving the Schrodinger equation with DVR (discrete variable representation) method. 
+%\end{itemize}
+
+
+%{\sl Workshop at Institute of Physics of the Polish Academy of Sciences}\hfill Winter 2019 \\
+%Project: 'Selected magnetic characteristics of solid body' under the supervision of dr hab. prof. IF PAN Andrzej Łusakowski
+
+%\begin{itemize} \itemsep -2pt % Reduce space between items
+%    \item Developed Monte Carlo simulations (in C++) of two basic lattice models of statistical mechanics: Ising model and XY model.
+%    \item Research on phase transitions in those two models.
+%\end{itemize}
+    
+    
+    
+    
+    
+    %----------------------------------------------------------------------------------------
+    
+    %---------------------------------------------------------------------------------------- 
+    
+\section{PUBLICATIONS}
+    \begin{itemize}
+        \item K. Nalewajko, \textbf{M. Kapusta}, A. Janiuk "Chaotic Magnetic Disconnections Trigger Flux Eruptions in Accretion Flows Channeled onto Magnetically Saturated Kerr Black Holes" 
+        Accepted in Astronomy \& Astrophysics \texttt{[arXiv:2410.08280]}
+        \item P.Mróz, A.Udalski, M.Szymański, \textbf{M. Kapusta}, et al. "Microlensing Optical Depth and Event Rate toward the Large Magellanic Cloud Based on 20 yr of OGLE Observations"
+        Accepted in ApJS \texttt{[arXiv:2403.02398]}
+        \item \textbf{M. Kapusta}, P. Mróz. "The search for Dormant Black Holes in the OGLE data"\\ Accepted in Acta Astronomica \texttt{[arXiv:2401.11293]}
+        
+        
+        \item F. Kayanikhoo, \textbf{M. Kapusta}, M. Cemeljic.{"The maximum mass and deformation of rotating strange quark stars with strong magnetic fields"}\\
+        Submitted to Physical Review D \texttt{[arXiv:2305.03055]}
+    \end{itemize}
+
+\section{TALKS \& POSTERS}
+    \begin{itemize}
+        \item \textbf{M. Kapusta} "Extreme resolution GRMHD simulations of Astrophysical jets", presentation at 10th Symposium for Young Researchers, presentation awarded with distinctions (September 2024, Warsaw)
+        \item \textbf{M. Kapusta} "Iris-ML: Neural Density Estimation for the Spectral Energy Distribution fitting." poster at GHOST 2024 Machine learning conference (April 2024, Poznan).
+
+        \item K. Nalewajko, \textbf{M. Kapusta}, A. Janiuk. "Initialization of magnetic flux eruptions at accreting black holes"\\
+                European Astronomical Society meeting 2023 (poster)
+%        \item F. Kayanikhoo, \textbf{M. Kapusta}, M. Cemeljic. \href{https://arxiv.org/abs/2305.03055}{"The maximum mass and deformation of rotating strange quark stars with strong magnetic fields"}\\
+%        Submitted to Physical Review D (\#Arxiv 2305.03055 )
+        \item F. Kayanikhoo, \textbf{M. Kapusta}, M. Cemeljic. "The maximum gravitational mass and deformation of magnetized rotating strange quark stars" \\
+        European Astronomical Society meeting 2023 (poster)
+
+    \end{itemize}
+    
+    \section{AWARDS \& SCHOLARSHIPS}
+    
+    \begin{itemize}
+        \item Gold medal at 2021 University Physics Competition (as part of the team representing Faculty of Physics)
+        \item Silver medal at 1st Global e-Competition on Astronomy and Astrophysics (in place of 14th International Olympiad on Astronomy and Astrophysics), 2020
+        \item Bronze medal at 13th International Olympiad on Astronomy and Astrophysics, 2019 Hungary
+        \item Winner of 62th and 63th Polish Astronomy Olympiad 
+        \item Finalist of 67th and 69th (11th place) Polish Physics Olympiad
+        \item Finalist of 70th Polish Mathematical Olympiad
+        \item Minister of Education’s scholarship in the year 2018/2019, 2019/2020
+        \item Rector scholarship in the academic year 2020/2021, 2021/2022, 2022/2023, 2023/2024
+    \end{itemize}
+
+\section{OUTREACH}
+    \begin{itemize}
+        \item Judge at International Math Competition Naboj (March, 2024)
+        \item Judge at 16th International Olympiad on Astronomy and Astrophysics (August, 2023)
+        \item Judge at International Math Competition Naboj (March, 2023)
+
+    \end{itemize}
+
+\section{COMPUTER \\ SKILLS} 
+
+{\sl Languages \& Software:} 
+
+%Python (including various libraries like Astropy, SciPy, Matplotlib, Numpy, Pandas, TensorFlow and more, knowledge of Python C API, knowledge of asynchronous and parallel programming), Julia, Fortran, C/C++, knowledge of parallel programming with OpenMP and MPI (Fortran and C/C++ API), knowledge of SIMD instructions,   Gnuplot, IRAF  \\
+Computer languages:
+\begin{itemize}
+    \item Python - advanced
+    \item C/C++ - advanced
+    \item Julia - advanced
+    \item R - intermediate
+    \item Fortran - intermediate
+    \item Rust - intermediate
+\end{itemize}
+Additional computer-related skills:
+\begin{itemize}
+    \item Bayesian modeling using emcee, Pyro, NumPyro, PyMC, and Tensorflow Probability
+    \item 3D visualizations with Paraview and Mayavi 
+    \item Parallel programming using MPI/OMP
+    \item Low-level programming using Python C API
+    \item Deep learning experience using PyTorch, Tensorflow, Jax
+    \item Grain level parallelism using SIMD
+    \item Experience with astronomical Python libraries like Astropy, Astroquery, PyVO
+\end{itemize} 
+%For code portfolio please see my \href{https://github.com/Wesenheit}{github profile}.\\ \par
+%\vspace{0.cm} 
+{\sl Operating Systems:} Advanced knowledge of Linux OS
+
+
+%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------------
+\section{Language}
+\begin{itemize}
+    \item English - C1 (103 TOEFL)
+    \item Polish - native speaker
+    \item German - A2/B1
+\end{itemize}
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}

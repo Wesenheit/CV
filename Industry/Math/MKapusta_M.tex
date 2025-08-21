@@ -1,0 +1,190 @@
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Mateusz Kapusta} & Email : \href{mailto:mr.kapusta@student.uw.edu.pl}{mr.kapusta@student.uw.edu.pl}\\
+  https://github.com/Wesenheit & Mobile : +48 530 510 849\\
+\end{tabular*}
+\section{Profile} 
+I am a fifth-year Master's student at the Faculty of Physics (and partially at the Faculty of Mathematics, Informatics and Mechanics), University of Warsaw. My main interest lies in the 
+modern data analysis (mostly Bayesian modeling), mathematical modeling, and statistics. Most of my education
+was supplemented with the relevant research experience in the field of natural science, where I could apply my knowledge to model real-life data
+and master problem-solving skills.
+Additionally, I am also interested in the low-level programming in C/C++, which I am mainly using to write codes, which are more demanding in terms of performance.
+I enjoy tackling different problems from various fields and have a long track of relevant projects, which I publish on my GitHub account
+https://github.com/Wesenheit.
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Warsaw University - major in Astrophysics}{Warsaw, Poland}
+  {\footnotesize Faculty of Physics (Msc);  GPA: 4.88/5}{Oct. 2023 -- Jul. 2025 (expected)}
+  \resumeItemListStart
+    \resumeItem{HPC \& acceleration}{
+      Designing CUDA + MPI accelerated multi-node numerical code for the relativistic hydrodynamics in Julia, aiming at petascale-size systems. Utilizing profiling tools like Nsight-Compute 
+      to pinpoint the bottlenecks of the application (bandwidth - compute - communication). Most of the work was centered around writing custom CUDA kernels.
+      Performing aggressive optimization to run as fast as possible on an Ampere-based Nvidia GPU-s
+      on several nodes of the supercomputer.
+    }
+    \resumeItem{Deep Learning}
+    {
+      Working on the transformer-based neural net for the astronomical data analysis. The model utilizes the Simulation-Based Inference (SBI)
+      to replace MCMC-based models and accelerate the inference for modern astronomical datasets. During the project, I designed my own hybrid model
+      (Set Invariant Transformer + Masked Autoregressive Flow) and 
+      implemented it with the PyTorch library. During the project almost everything was implemented and trained from scratch.
+      Obtained results were presented as a poster
+      at national-level conference ML in PL 2024, and will be presented in peer-reviewed publication in the future.
+    }
+    \resumeItemListEnd
+    \resumeSubheading
+      {Warsaw University - major in Astrophysics (minor in Computer Science)}{Warsaw, Poland}
+      {\footnotesize Inter-faculty Individual Studies in Mathematics and Natural Sciences (Bsc);  GPA: 4.96/5}{Oct. 2020 -- Jul. 2023}
+      \par
+      \vspace{0.2cm}
+      Pursuing interdisciplinary studies, divided between Faculty of Physics (FUW) and Faculty of Mathematics, Informatics and Mechanics (MIMUW).
+      \resumeItemListStart
+        \resumeItem{C/C++ programming}{
+            Working on MPI task launching with LORENE library. Porting some routines from old C++98 standard to utilize some of 
+            the modern C++11 standard. Porting old matlab code to C++ with OpenMP parallelization, allowing to scale calculations on a computer cluster. 
+        }
+        \resumeItem{Data Analysis \& acceleration}{Working with astronomical databases, data cleaning and analysis.
+          Creating statistical software, implementing various statistical methods (MCMC, ANOVA, and more).
+          Using ADQL queries to analyse enourmous amounts of astronomical data.
+          Utilizing low-level C programming with SIMD instructions to speed up the processing of time-series data, writing Python wrappers with Python C-API.
+          During my studies I obtained basic research experience, most of my work was supported by NCN grant 2021/41/B/ST9/00252.
+        }
+        \resumeItem{Bioinformatics \& Statistics}{
+          Completed courses from the field of statistical data analysis in the context of biological data, taught by the Computational Medicine group at
+          Faculty of Mathematics, Informatics and Mechanics.
+          Learned to use methods ranging from statistical ones (Random Forest, Linear Models, KNN, etc) through Bayesian ones (MCMC, VI, GMM) to deep learning (VAE),
+          to model biological data.
+        }
+        \resumeItem{Deep Learning}{
+          Attended courses designed for the Machine Learning Master's program (ar MIMUW), in the field of deep learning. Courses covered not only basic material from various 
+          fields like Computer Vision, Natural Language Processing, and Reinforcement Learning, but also more advanced ones including modern state-of-the-art architectures 
+          like transformers, rainbow agents, advanced detection models like FCOS, and more. Moreover, I gained expert-level knowledge from the field of Bayesian modelling 
+          including traditional methods (MCMC, VI) and hybrid ones like Variational Autoencoders, Normalizing Flows and more.
+        }
+    \resumeItemListEnd
+    \resumeSubheading
+      {IIIrd High School}{Wroclaw , Poland}
+      {\footnotesize Graduated with distinction;  GPA: 4.8/5}{Sep. 2017 -- July. 2020}
+  \resumeSubHeadingListEnd
+
+\section{Relevant university education}
+  \resumeSubHeadingListStart
+    \item \textbf{Programming courses}: Programming I (Python), Programming II  (C++), High Performance Computing (C++, CUDA, MPI, 
+          performance analysis, {\it ongoing course}), Numerical Methods (performance benchmarking, C).
+    \item \textbf{Advanced statistical lectures}: Statistical Data Analysis I  (R, machine learning, data processing), 
+                                    Statistical Data Analysis II  (Bayesian modeling, deep learning, genomics),
+                                    Deep Neural Networks  (NLP, CV, RL),
+                                    Models of Applied Mathematics  (game theory, markov chains),
+                                    Stochastic Processes (stochastic processes, time series)
+    \item \textbf{Extracurricular activities}: Attending Statistical Journal Club (SJC) at the Astronomical Observatory, University of Warsaw. Active contribution to the journal club,
+    presenting new computational advances at the intersection of Astronomy and Statistics/Deep Learning.
+  \resumeSubHeadingListEnd
+
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python (advanced), C/C++ (advanced), Julia (advanced), R (beginner), Rust (beginner)}
+      \hfill \\
+      \textbf{Data-analysis oriented libraries}{: pandas, jupyter, matplotlib, seaborn, SQL.}
+      \hfill \\
+      \textbf{ML libraries}{: Torch, TensorFlow, Jax/Flax/Haiku, scikit-learn, Pyro, PyMc, blackjax}
+    }
+    \item{
+     \textbf{Additional skils}{: git, bash, very good knowledge of Linux OS.}
+    }
+  \resumeSubHeadingListEnd
+
+
+\section{Awards}
+    \resumeSubHeadingListStart
+    \item Rector scholarship in academic year 2020/2021, 2021/2022, 2022/2023, 2023/2024 and 2024/2025.
+    \item University Physics Competition 2021: Part of Faculty of Physics team wining gold medal
+    \item Finalist of 69th and 67th Polish Physics Olympiad
+    \item Finalist of 70th Polish Mathematical Olympiad
+    \item Winner of 62th Polish Astronomical Olympiad
+    \item Bronze Medalist at 11th International Olympiad on Astronomy and Astrophysics
+    \item Silver medal at 1st Global e-Competition on Astronomy and Astrophysics (in
+    place of 14th International Olympiad on Astronomy and Astrophysics), 2020
+    \resumeSubHeadingListEnd
+  
+\section{Language}
+\begin{itemize}
+    \item English - C1 (103 TOEFL)
+    \item Polish - native speaker
+    \item German - A2/B1
+\end{itemize}
+
+%-------------------------------------------
+\end{document}

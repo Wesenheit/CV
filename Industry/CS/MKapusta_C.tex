@@ -1,0 +1,198 @@
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Mateusz Kapusta} & Email : \href{mailto:mr.kapusta@student.uw.edu.pl}{mr.kapusta@student.uw.edu.pl}\\
+  https://github.com/Wesenheit & Mobile : +48 530 510 849\\
+\end{tabular*}
+\section{Profile} 
+I am a fifth-year Master's student at the Faculty of Physics (and partially at the Faculty of Mathematics, Informatics and Mechanics), University of Warsaw. My main interest lies
+in the low-level programming, distributed computing,
+GPU programming and performance benchmarking. In general, I like to make code fast, no mater if it runs on multi-node cluster or embedded device.
+Moreover, I am also involved in several projects from the field of data analysis and Deep Learning,
+where I am mainly working in Python (with parts of the code written in C for acceleration). Especially,
+I like when both low-level programming and Deep Learning intersect.
+Much of my work has been made possible by the strong technical foundation I developed at MIMUW, 
+where I studied within the College of Interdisciplinary Studies (MISMaP).
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Warsaw University - major in Astrophysics}{Warsaw, Poland}
+  {\footnotesize Faculty of Physics (Msc);  GPA: 4.88/5}{Oct. 2023 -- }
+  \resumeItemListStart
+    \resumeItem{HPC \& acceleration}{
+      Designing CUDA + MPI accelerated multi-node numerical code for the hydrodynamics in Julia (with mirror code written in C/C++ for comparison), aiming at petascale-size systems. Utilizing profiling tools like Nsight-Compute 
+      to pinpoint the bottlenecks of the application (memory bandwidth - compute - communication). Most of the work was centered around writing custom CUDA kernels.
+      Performing aggressive optimization to run as fast as possible on an Ampere-based Nvidia GPUs
+      on several nodes of the supercomputer. Work is supported by the EuroHPC developer grant EHPC-DEV-2025D02-085, where I am a Co-PI.
+    } 
+    \resumeItem{Deep Learning}
+    {
+      Working on the transformer-based neural net for the Bayesian data analysis. The model utilizes the Simulation-Based Inference (SBI)
+      to replace MCMC-based models and accelerate the inference for modern set-like dataset. During the project, I designed my own hybrid model
+      (Set Invariant Transformer + Masked Autoregressive Flow) and 
+      implemented it with the PyTorch library. During the project almost everything was implemented and trained from scratch.
+      Obtained results were presented as a poster
+      at national-level conference ML in PL 2024, and will be presented in peer-reviewed publication in the future.
+    }
+    \resumeItemListEnd
+    \resumeSubheading
+      {Warsaw University - major in Astrophysics (minor in Computer Science)}{Warsaw, Poland}
+      {\footnotesize Inter-faculty Individual Studies in Mathematics and Natural Sciences (Bsc);  GPA: 4.96/5}{Oct. 2020 -- Jul. 2023}
+      \par
+      \vspace{0.2cm}
+      Pursuing interdisciplinary studies, divided between Faculty of Physics (FUW) and Faculty of Mathematics, Informatics and Mechanics (MIMUW).
+      \resumeItemListStart
+        \resumeItem{C/C++ programming}{
+            Working on MPI task launching with LORENE library. Porting some routines from old C++98 standard to utilize some of 
+            the modern C++11 standard. Porting old matlab code to C++ with OpenMP parallelization, allowing to scale calculations on a computer cluster. 
+        }
+        \resumeItem{Data Analysis \& acceleration}{Working with astronomical databases, data cleaning and analysis.
+          Mining massive datasets, creating pipelines to process them, and analyzing the results.
+          Creating statistical software, implementing various statistical methods (MCMC, ANOVA, and more).
+          Utilizing low-level C programming with SIMD instructions to speed up the processing of time-series data, writing Python wrappers with Python C-API.
+          During my studies I obtained basic research experience.
+        }
+        \resumeItem{Deep Learning}{
+          Attended courses designed for the Machine Learning Master's program (ar MIMUW), in the field of deep learning. Courses covered not only basic material from various 
+          fields like Computer Vision, Natural Language Processing, and Reinforcement Learning, but also more advanced ones including modern state-of-the-art architectures 
+          like transformers, rainbow agents, advanced detection models like FCOS, and more. Moreover, I gained expert-level knowledge from the field of Bayesian modelling 
+          including traditional methods (MCMC, VI) and hybrid ones like Variational Autoencoders, Normalizing Flows and more.
+        }
+        \resumeItemListEnd
+    \resumeSubheading
+      {IIIrd High School}{Wroclaw , Poland}
+      {\footnotesize Graduated with distinction;  GPA: 4.8/5}{Sep. 2017 -- July. 2020}
+  \resumeSubHeadingListEnd
+
+\section{Relevant university education}
+  \resumeSubHeadingListStart
+    \item \textbf{Programming courses}: Programming I \& II (Python, C++, data structures \& algorithms), Statistical Data Analysis I  (R, machine learning, data processing),
+          Statistical Data Analysis II (Bayesian modeling, deep learning, genomics), Deep Neural Networks (NLP, CV, RL), High Performance Computing (C++, CUDA, MPI, 
+          performance analysis).
+    \item \textbf{Extracurricular activities}: Attending Statistical Journal Club (SJC) at the Astronomical Observatory, University of Warsaw. Active contribution to the journal club,
+    presenting new computational advances at the intersection of Astronomy and Statistics/Deep Learning.
+  \resumeSubHeadingListEnd
+
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python (advanced), C/C++ (advanced), Julia (advanced), R (beginner), Rust (beginner)}
+      %\hfill \\
+      \textbf{ML libraries}{: Torch, TensorFlow, Jax/Flax/Haiku, scikit-learn, Pyro, PyMc, blackjax}
+    }
+    \item{
+     \textbf{Additional skils}{: MPI, OpenMP, CUDA, SIMD intrinsics, git, bash, very good knowledge of Linux OS.}
+    }
+  \resumeSubHeadingListEnd
+
+\section{Computational grants}
+  \resumeSubHeadingListStart
+  \item{
+    EHPC-DEV-2025D02-085 - Development acess on the Leonardo BOOSTER partition, $18$k GPU hours.
+  }
+  \resumeSubHeadingListEnd
+
+\section{Awards}
+    \resumeSubHeadingListStart
+    \item Rector scholarship in academic year 2020/2021, 2021/2022, 2022/2023, 2023/2024 and 2024/2025.
+    \item University Physics Competition 2021: Part of Faculty of Physics team wining gold medal
+    \item Finalist of 69th and 67th Polish Physics Olympiad
+    \item Finalist of 70th Polish Mathematical Olympiad
+    \item Winner of 62th Polish Astronomical Olympiad
+    \item Bronze Medalist at 11th International Olympiad on Astronomy and Astrophysics
+    \item Silver medal at 1st Global e-Competition on Astronomy and Astrophysics (in
+    place of 14th International Olympiad on Astronomy and Astrophysics), 2020
+    \resumeSubHeadingListEnd
+
+%\section{Posters \& Publications}
+%    \resumeSubHeadingListStart
+%        \item \textbf{M. Kapusta} "Iris-ML: Neural Posterior Estimation for the Spectral Energy Distribution fitting." poster at ML in PL 2024 machine learning conference (November 2024, Warsaw).
+%        \item K. Nalewajko, \textbf{M. Kapusta}, A. Janiuk "Chaotic Magnetic Disconnections Trigger Flux Eruptions in Accretion Flows Channeled onto Magnetically Saturated Kerr Black Holes" 
+%        Accepted in Astronomy \& Astrophysics \texttt{[arXiv:2410.08280]}
+%        \item P. Mróz, A. Udalski, M. Szymański, \textbf{M. Kapusta}, et al. "Microlensing Optical Depth and Event Rate toward the Large Magellanic Cloud Based on 20 yr of OGLE Observations"
+%        ApJS, 273, 4 (2024) \texttt{[arXiv:2403.02398]}
+%        \item \textbf{M. Kapusta}, P. Mróz. "The search for Dormant Black Holes in the OGLE data"\\ 2023, Acta Astron., 73, 197 \texttt{[arXiv:2401.11293]}
+%        \resumeSubHeadingListEnd
+    
+
+    %--------PROGRAMMING SKILLS------------
+ 
+\section{Language}
+\begin{itemize}
+    \item English - C1 (103 TOEFL)
+    \item Polish - native speaker
+    \item German - A2/B1
+\end{itemize}
+
+%-------------------------------------------
+\end{document}

@@ -1,0 +1,211 @@
+\documentclass[english,a4paper]{europasscv}
+\usepackage[english]{babel}
+
+\ecvname{Mateusz Kapusta}
+\ecvtelephone{+48 530 510 849}
+
+\ecvemail{mr.kapusta@student.uw.edu.pl}
+\ecvhomepage{https://wesenheit.github.io/}
+\ecvgithubpage{www.github.com/Wesenheit}
+% \ecvgitlabpage{www.gitlab.com/smith}
+% \ecvlinkedinpage{www.linkedin.com/in/katie-smith}
+\ecvorcid[label, link]{0009-0005-6812-5605}
+%\ecvim{AOL Messenger}{katie.smith}
+%\ecvim{Google Talk}{ksmith}
+
+% \ecvgender{Female}
+\ecvdateofbirth{14 July 2001}
+\ecvnationality{Polish}
+
+ \ecvpicture[width=3.8cm]{MK_photo}
+
+% \date{}
+
+\begin{document}
+  \begin{europasscv}
+
+  \ecvpersonalinfo
+
+  \ecvsection{Summary}
+  \ecvitem{}{
+  I am a Master's student, currently studying at the Faculty of Physics, University of Warsaw. I completed my Bachelor's thesis under the supervision of  Przemysław Mróz at the 
+  Warsaw University Observatory. I graduated from the college of Inter-Faculty Individual Studies, where I divided my time between the Faculty of Physics (FUW)
+  and Faculty of Mathematics, Informatics and Mechanics (MIMUW).
+  I am passionate about the interdisciplinary research, where physical/astronomical problems can be approach from mathematical/computational perspective. 
+  Especially interested in Bayesian Modelling and High Performance Computing.
+  During my studies I had an opportunity to work on different aspects of Astrophysics, ranging from observational projects to 
+  theoretical ones.
+  In my free time I like exploring machine learning based methods applied in the field of Natural Sciences,
+  solving problems across different disciplines from Bioinformatics to Astronomy.}
+  %Currently I work with Krzysztof Nalewajko (Nicolaus Copernicus Astronomical Center - NCAC), investigating astrophysical jets launched from 
+  %Supermassive black holes with the help of numerical simulations.
+  \ecvsection{Work experience}
+
+  \ecvtitle{April 2024 - present}{Student research assistant, Nicolaus Copernicus Astronomical Center}
+  \ecvitem{}{Working under the supervision of Krzysztof Nalewajko (NCAC).}
+  \ecvitem{}{Project in cooperation with Bart Ripperda (CITA, Toronto) and Alexander Philippov (University of Maryland).}
+  \ecvitem{}{Project is planned to be presented in the Master's thesis.}
+  \ecvitem{}{\begin{ecvitemize}
+      \item Working with extreme resolution magnetohydrodynamical (MHD) simulations created with H-AMR code.
+      \item Studying stability of astrophysical jets launched from black holes.
+      \item Investigating influence of magnetic flux eruptions, associated with Magnetically Arrested Discs (MAD), on the properties of the jet. 
+  \end{ecvitemize}}
+  
+  \ecvtitle{November 2022 - present}{Student research assistant at Astronomical Observatory}
+  \ecvitem{}{Student position in grant 2021/41/B/ST9/00252, working under the supervision of Przemysław Mróz.}
+  \ecvitem{}{\begin{ecvitemize}
+      \item Performing MCMC modelling of microlensing events discovered as the part of $4$th phase of the OGLE project.
+      \item Investigating Free Floating Planet (FFP) microlensing event OGLE-2023-BLG-0524. Working on theoretical modelling, analyzing legacy Hubble Space Telescope (HST)
+      photometry, performing detectability simulations in order to verify FFP hypothesis. Project involves a significant data-related part including Bayesian modelling,
+      working with real PSF-s and more.
+      \item Research resulted in 4th-author publication in ApJS, currently preparing first author publication about the OGLE-2023-BLG-0524 event.
+  \end{ecvitemize}}
+  
+  \ecvtitle{November 2023 - present}{Research project within the field of Deep Learning}
+  \ecvitem{}{Working on deep learning model aimed to speed up MCMC inference of Spectral Energy Distribution (SED) fitting (written in PyTorch).
+  Project is centered on the analysis of the photometric data to determine physical parameters of stars (temperature, metalicty, reddening, etc.).
+  Python-based PyTorch framework has been used to implement the networks. }
+  \ecvitem{}{\begin{ecvitemize}
+      \item Designed and coded a deep neural network based on the transformer architecture, allowing one to process any number of photometric measurements.
+      \item Implemented a neural network for Neural Posterior Estimation (NPE, based on the Masked Autoregressive Flow model) to estimate the posterior of Bayesian model.
+      \item Project resulted in two posters presented on international machine learning conferences (ML in PL 2024 and GHOST 2024).
+  \end{ecvitemize}
+  }
+
+  \ecvtitle{November 2024 - present}{Research project at the Astronomical Observatory, University of Warsaw}
+  \ecvitem{}{Developing GPU-accelerated, mutli-node special-relativistic hydrodynamical code (writen in Julia).
+  Code utilizes the Riemann solver and allows for various reconstuction methods (Minmod, Weno-Z, PPM).
+  Project is done under the supervision of prof. Tomasz Bulik.}
+  \ecvitem{}{\begin{ecvitemize}
+      \item Writing custom CUDA kernels to maximize the performance on Ampere-based Nvidia GPU-s.
+      \item Profiling the code with respect to different bandwidths (computational - memory - communication).
+      \item Checking the performance of different reconstruction methods, trying to pinpoint most suitable algorithm for given GPU architecture.
+      \item Project is being developed with the help of EuroHPC development access computing grant EHPC-DEV-2025D02-085 on the Leonardo BOOSTER, where I am a Co-PI.
+  \end{ecvitemize}
+  }
+
+
+
+
+  \ecvtitle{July 2022 - July 2023}{Bachelor's Thesis at Warsaw University Astronomical Observatory}
+  \ecvitem{}{Working under the supervision of Przemysław Mróz on the data analysis from the OGLE survey to search for dormant black hole candidates.}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Analysing OGLE data using the method introduced in Gomel et al. \href{https://arxiv.org/abs/2008.11209}{2021}.
+      \item Designing Python based MCMC code to assemble spectral energy distribution (SED) for candidate objects.
+      \item Inference of the parameters of binaries using the OGLE and Gaia DR3 data, searching for compact companion stars.
+      \item Project resulted in first-author paper accepted in Acta Astronomica.
+  \end{ecvitemize}}
+
+  \ecvtitle{July 2022 - October 2022}{Intern at Nicolaus Copernicus Astronomical Center}
+  \ecvitem{}{Project: "Measuring the structure of relativistic jets in numerical simulation results" under the supervision of Krzysztof Nalewajko (NCAC) and Agnieszka Janiuk (CFT PAN).}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Worked with results from HARM MHD code to study the structure of magnetically arrested discs.
+      \item Developed a few Python routines to search for magnetic reconnection and other interesting magnetic phenomena.
+      \item Work accomplished during the internship resulted in second-author publication submitted to Astronomy \& Astrophysics (in revision).
+  \end{ecvitemize}}
+
+  \ecvtitle{July 2021 - October 2023}{Intern at Nicolaus Copernicus Astronomical Center}
+  \ecvitem{}{Project: "Energy of a Strange Quark Star" under the supervision of Fatemeh Kayanikhoo, M. Cemeljic and J. Zdunik}
+  \ecvitem{}{\begin{ecvitemize}
+    \item Worked with LORENE library to study the structure of relativistic strange quark stars, ported part of functions to work with 
+    C++17 standard and MPI multithread environment.
+    \item Developed Python code to calculate the external energy of a star contained in a magnetic field.
+    \item Developed multi-threaded C++ code to calculate the equation of state of the magnetized strange matter.
+    \end{ecvitemize}}
+
+  \ecvsection{Education and training}    
+  \ecvtitle{2023-2025(expected)}{Master of Science in Astrophysics}
+  \ecvitem{}{Faculty of Physics, University of Warsaw, Poland}
+  \ecvitem{}{Thesis: TBD}
+  \ecvitem{}{Supervisor: Krzysztof Nalewajko (email: knalew@camk.edu.pl)}
+  \ecvitem{}{Major: Astronomy}
+
+  \ecvtitle{2020-2023}{Bachelor of Science in Astrophysics}
+  \ecvitem{}{College of Inter-faculty Studies in Mathematics and Natural Sciences, University of Warsaw, Poland. My studies were divided between the Faculty of Physics and 
+  Faculty of Mathematics, Informatics and Mechanics.}
+  \ecvitem{}{Thesis: \textbf{Search for dormant black holes in the OGLE data}}
+  \ecvitem{}{Grade:  4.96/5 (2-5 scale, 5 is the highest), graduated with distinctions}
+  \ecvitem{}{Supervisor: Przemysław Mróz (email: pmroz@astrouw.edu.pl)}
+  \ecvitem{}{Major: Astronomy}
+  \ecvitem{}{Minor: Mathematics, Computer Science}
+    
+  \ecvsection{Personal skills}
+  \ecvmothertongue{Polish}
+  \ecvitem{}{English - C1 (103 TOEFL)}
+  \ecvitem{}{German - B1 }
+
+  \ecvsection{Publications}
+  \ecvitem{}{
+    \begin{ecvitemize}
+      \item K. Nalewajko, \textbf{M. Kapusta}, A. Janiuk "Chaotic Magnetic Disconnections Trigger Flux Eruptions in Accretion Flows Channeled onto Magnetically Saturated Kerr Black Holes" 
+      Accepted in Astronomy \& Astrophysics \texttt{[arXiv:2410.08280]}
+      \item P. Mróz, A. Udalski, M. Szymański, \textbf{M. Kapusta}, et al. "Microlensing Optical Depth and Event Rate toward the Large Magellanic Cloud Based on 20 yr of OGLE Observations"
+      ApJS, 273, 4 (2024) \texttt{[arXiv:2403.02398]}
+      \item \textbf{M. Kapusta}, P. Mróz. "The search for Dormant Black Holes in the OGLE data"\\ 2023, Acta Astron., 73, 197 \texttt{[arXiv:2401.11293]}
+      
+      
+      %\item F. Kayanikhoo, \textbf{M. Kapusta}, M. Cemeljic.{"The maximum mass and deformation of rotating strange quark stars with strong magnetic fields"}\\
+      %Submitted to Physical Review D \texttt{[arXiv:2305.03055]}
+  \end{ecvitemize}}
+
+  \ecvsection{Talks \& Posters}
+  \ecvitem{}{\begin{ecvitemize}
+      \item \textbf{M. Kapusta}, K. Nalewajko, B. Ripperda, A. Philippov "3D geometry and magnetic connections of the erupting black-hole jet", oral presentation at the conference "Feeling the pull and the pulse of relativistic magnetospheres", Les Houches April 2025.
+      \item \textbf{M. Kapusta} "Extreme resolution GRMHD simulations of Astrophysical jets", presentation at 10th Symposium for Young Researchers, presentation awarded with distinctions (September 2024, Warsaw)
+      \item \textbf{M. Kapusta} "Iris-ML: Neural Posterior Estimation for the Spectral Energy Distribution fitting." poster at ML in PL 2024 machine learning conference (November 2024, Warsaw).
+  \end{ecvitemize}}
+  
+
+    
+  \ecvsection{Awards \& Scholarships}
+  \ecvitem{}{ 
+  \begin{ecvitemize}
+      \item Gold medal at 2021 University Physics Competition (as part of the team representing Faculty of Physics)
+      \item Silver medal at the 1st Global e-Competition on Astronomy and Astrophysics (in place of 14th International Olympiad on Astronomy and Astrophysics), 2020
+      \item Bronze medal at 13th International Olympiad on Astronomy and Astrophysics, 2019 Hungary
+      \item Winner of 62th and 63th Polish Astronomy Olympiad for high school students
+      \item Finalist of 67th and 69th (11th place) Polish Physics Olympiad for high school students
+      \item Finalist of 70th Polish Mathematical Olympiad for high school students
+      \item Minister of Education's scholarship in the year 2018/2019, 2019/2020
+      \item Rector's scholarship in the academic year 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025
+  \end{ecvitemize}}
+
+    \ecvsection{OUTREACH}
+    \ecvitem{}{ 
+  \begin{ecvitemize}
+      \item Jury at the international math competition Naboj (March, 2025)
+      \item Jury at the international math competition Naboj (March, 2024)
+      \item Judge at the 16th International Olympiad on Astronomy and Astrophysics (August, 2023)
+      \item Jury at the international math competition Naboj (March, 2023)
+  \end{ecvitemize}}
+
+  \ecvsection{Computer \\ Skills} 
+
+  \ecvitem{}{ Languages \& Software:} 
+  
+  %Python (including various libraries like Astropy, SciPy, Matplotlib, Numpy, Pandas, TensorFlow and more, knowledge of Python C API, knowledge of asynchronous and parallel programming), Julia, Fortran, C/C++, knowledge of parallel programming with OpenMP and MPI (Fortran and C/C++ API), knowledge of SIMD instructions,   Gnuplot, IRAF  \\
+  \ecvitem{}{Computer languages:}
+  \ecvitem{}{\begin{ecvitemize}
+      \item Python - advanced
+      \item C/C++ - advanced
+      \item Julia - advanced
+      \item Fortran - intermediate
+      \item Rust - intermediate
+  \end{ecvitemize}}
+  \ecvitem{}{  Additional computer-related skills:}
+  \ecvitem{}{\begin{ecvitemize}
+    \item Advanced knowledge of Linux OS
+    \item Bayesian modeling using emcee, Pyro/NumPyro, PyMC, blackjax and Tensorflow Probability
+    \item 3D visualizations with Paraview and Mayavi 
+    \item Parallel programming using MPI/OMP, GPGPU programming in CUDA
+    \item Low-level programming using Python C API
+    \item Deep learning experience using PyTorch, Tensorflow, Jax
+    \item Low-level parallelism using SIMD
+    \item Experience with astronomical Python libraries like Astropy, Astroquery, PyVO
+    \end{ecvitemize}}
+
+  \end{europasscv}
+
+\end{document}
