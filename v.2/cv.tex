@@ -1,0 +1,204 @@
+
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\usepackage{tabularx}
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\usepackage{fontawesome}% <=============================================
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\setlength{\textwidth}{5.5in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Mateusz Kapusta} % Your name at the top
+
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+
+\moveleft.5\hoffset\centerline{Astronomical Observatory, University of Warsaw, Al. Ujazdowskie 4, 00-478 Warsaw,Poland}
+\moveleft.5\hoffset\centerline{\href{https://github.com/Wesenheit}{\faGithubSquare https://github.com/Wesenheit}}
+\moveleft.5\hoffset\centerline{\href{https://wesenheit.github.io/}{Website: https://wesenheit.github.io/}}
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+\section{EDUCATION}
+
+{\sl Master of Science, \textbf{2023-2026} (expected)}\\
+Master of Science in Astrophysics\\
+Warsaw University Observatory, Faculty of Physics\\
+
+{\sl Bachelor of Science, \textbf{2020-2023}}\\
+Inter-faculty Individual Studies in Mathematics and Natural Sciences, University of Warsaw, Poland\\
+Grade:  4.96/5 (2-5 scale, 5 is highest), graduated with distinctions\\
+Major: Astrophysics, Physics\\
+Minor: Computer Science \par
+
+\section{EXPERIENCE}
+
+
+{\sl Machine Learning intern,  ASML (Veldhoven, Netherlands)} \hfill October 2025 - June 2026\\
+Working in the R\&D department on the machine learning solutions for the diagnostic of
+the degradation of NXE litographic machines (various contaminations in the optical column).
+\begin{itemize}
+    \item Researching hybrid models integrating physical simulations with the machine learning models.
+    Most of the work was centered around developing data-driven corrections to the physical model
+    used in the diagnostic process.
+    \item Based on the created model, implementing Bayesian inference algorithms to infer the contamination
+    profile in the machine.
+    \item High performance implementation of the inference algorithms including optimization
+    for edge devices like oridnary laptops
+    and large-scale HPC clusters.
+\end{itemize}
+
+
+{\sl Quantitative Developer intern, UBS AG \hfill July 2025 - September 2025} \\
+Working on the high-performant, mulit-code C++ engine used to price loans within Lombard Lending unit.
+\begin{itemize}
+    \item Code benchmarking, bottleneck identification.
+    \item Investigation of parallel efficiency of the code, load balancing of the code using IntelTBB.
+    \item Memory and other optimizations.
+    \item In the end, code after optimization was $3$ times faster and $2$ times more memory efficient.
+\end{itemize}
+
+
+{\sl Student research assistant, Nicolaus Copernicus Astronomical Center} \hfill April 2023 - July 2025\\
+Working under supervision of Krzysztof Nalewajko (NCAC).
+Project in cooperation with Bart Ripperda (CITA, Toronto) and Alexander Philippov (University of Maryland).
+\begin{itemize}
+    \item Working with extreme resolution Magnetohydrodynamical (MHD) simulations created with H-AMR code.
+    \item Studying stability of a astrophysical jets launched from black holes.
+    \item Investigating influence of magnetic flux eruptions, associated with Magnetically Arrested Discs (MAD), on the properties of the jet.
+    \item Presented work will be submitted as a second-author paper to Astrophysical Journal Letters.
+\end{itemize}
+
+
+{\sl Student research assistant at Astronomical Observatory} \hfil November 2022 - July 2025\\
+Student position in grant 2021/41/B/ST9/00252, working under the supervision of Przemysław Mróz.
+\begin{itemize}
+    \item Performing MCMC modelling of microlensing events discovered as the part of $4$th phase of the OGLE project.
+    \item Investigating Free Floating Planet (FFP) microlensing event OGLE-2023-BLG-0524. Working on theoretical modelling, analysing legacy Hubble Space Telescope (HST)
+    photometry, performing detectability simulations in order to verify FFP hypothesis.
+    \item Research resulted in 4th-author publication in ApJS, and first-author publication in A\&A about OGLE-2023-BLG-0524 event.
+\end{itemize}
+
+
+
+{\sl Bachelor's Thesis at Warsaw University Astronomical Observatory} \hspace*{0.1cm} July 2022 - July 2023\\
+Working under the supervision of dr Przemysław Mróz on the data analysis from the OGLE survey to search for Dormant Black Hole candidates.
+\begin{itemize}
+    \item Analysing OGLE data using the method introduced in Gomel et al. \href{https://arxiv.org/abs/2008.11209}{2021}
+    \item Designing Python based MCMC code to assemble spectral energy distribution (SED) for candidate objects.
+    \item Inference of the parameters of binaries using the OGLE and Gaia DR3 data, searching for compact companion stars.
+    \item Project resulted in first-author paper accepted in Acta Astronomica.
+\end{itemize}
+
+
+
+{\sl Intern at Nicolaus Copernicus Astronomical Center}\hfill July 2022 - October 2022\\
+Project: "Measuring the structure of relativistic jets in numerical simulation results" under the supervision of Krzysztof Nalewajko (NCAC) and prof. Agnieszka Janiuk (CFT PAN).
+\begin{itemize}
+    \item Worked with results from HARM MHD code to study the structure of magnetically arrested discs.
+    \item Developed a few Python routines to search for magnetic reconnection and other interesting magnetic phenomena.
+    \item Work accomplished during the internship resulted in second-author publication submitted to Astronomy \& Astrophysics.
+\end{itemize}
+
+{\sl Intern at Nicolaus Copernicus Astronomical Center}\hfill July 2021 - October 2023\\
+Project: "Energy of a Strange Quark Star" under the supervision of Fatemeh Kayanikhoo  and dr M. Cemeljic
+\begin{itemize}
+    \item Worked with LORENE library to study the structure of relativistic strange quark stars, ported part of functions to work with
+    C++17 standard and MPI multithread environment.
+    \item Developed Python code to calculate the external energy of a star contained in a magnetic field.
+    \item Developed multi-threaded C++ code to calculate the equation of state of the magnetized strange matter.
+\end{itemize}
+
+\section{PROJECTS}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Neural Posterior Estimation for Spectral Energy Distribution fitting} & \hfill \href{https://github.com/Wesenheit/Iris-ML}{Github} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Reaserching applications of Neural Posterior Estimation in Astronomy. Spectral Energy Distribution fitting is powerfull yet
+computationally expensive technique widelly used in Astronomy. I demonstrated that with the help of normalizing flows one can
+speed up the inference of parameters by several orders of magnitudes.
+To do so, I designed my own complex preprocessing model that was paried with Masked Autoregressive Flow.
+Model was then fined-tuned so it can operate on real-life astronomical data. Model was accepted as
+poster at the ICML 2025 co-located workshop: Machine Learning for Astrophysics.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Computational Fluid Dynamics on GPU-s} & \hfill \href{https://github.com/Wesenheit/Verona}{Github} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Astrophysical research heavilly rellies on the simulations. In the project, a Riemann
+solver was implemented to solve the equations of relativistic fluids.
+It is written in CUDA-enabled Julia code
+paralellized with MPI to utilize massive GPU clusters.
+It relies on manually written computational kernels that are optimized for A100 NVIDIA GPU-s
+(compute - memory bandwidth - communication).
+Project is being developed with the help of
+EuroHPC development access computing grant EHPC-DEV-2025D02-085 on the Leonardo BOOSTER, where I am a Co-PI.}  \\
+\end{tabularx}
+
+
+\section{PUBLICATIONS}
+    \begin{itemize}
+        \item \textbf{M. Kapusta}, P. Mroz, et al. "HST pre-imaging of a free-floating planet candidate microlensing event"
+        Accepted in Astronomy \& Astrophysics \texttt{[arXiv:2507.01109]}
+        \item K. Nalewajko, \textbf{M. Kapusta}, A. Janiuk "Chaotic Magnetic Disconnections Trigger Flux Eruptions in Accretion Flows Channeled onto Magnetically Saturated Kerr Black Holes"
+        Accepted in Astronomy \& Astrophysics \texttt{[arXiv:2410.08280]}
+        \item P.Mróz, A.Udalski, M.Szymański, \textbf{M. Kapusta}, et al. "Microlensing Optical Depth and Event Rate toward the Large Magellanic Cloud Based on 20 yr of OGLE Observations"
+        Accepted in ApJS \texttt{[arXiv:2403.02398]}
+        \item \textbf{M. Kapusta}, P. Mróz. "The search for Dormant Black Holes in the OGLE data"\\ Accepted in Acta Astronomica \texttt{[arXiv:2401.11293]}
+
+    \end{itemize}
+
+\section{TALKS \& POSTERS}
+    \begin{itemize}
+        \item \textbf{M. Kapusta}: "IrisML: Neural Posterior Estimation for the Spectral Energy Distribution fitting"
+        ICML 2025: Machine learning for Astrophysics workshop.
+    \end{itemize}
+
+    \section{AWARDS \& SCHOLARSHIPS}
+
+    \begin{itemize}
+        \item Gold medal at 2021 University Physics Competition (as part of the team representing Faculty of Physics)
+        \item Silver medal at 1st Global e-Competition on Astronomy and Astrophysics (in place of 14th International Olympiad on Astronomy and Astrophysics), 2020
+        \item Bronze medal at 13th International Olympiad on Astronomy and Astrophysics, 2019 Hungary
+        \item Winner of 62th and 63th Polish Astronomy Olympiad
+        \item Finalist of 67th and 69th (11th place) Polish Physics Olympiad
+        \item Finalist of 70th Polish Mathematical Olympiad
+        \item Minister of Education’s scholarship in the year 2018/2019, 2019/2020
+        \item Rector scholarship in the academic year 2020/2021, 2021/2022, 2022/2023, 2023/2024
+    \end{itemize}
+
+\section{OUTREACH}
+    \begin{itemize}
+        \item Judge at International Math Competition Naboj (March, 2023-2025)
+        \item Judge at 16th International Olympiad on Astronomy and Astrophysics (August, 2023)
+
+    \end{itemize}
+
+\section{COMPUTER \\ SKILLS}
+
+{\sl Languages \& Software:}
+\begin{itemize}
+    \item Computer languages - Python,C/C++, Julia, R, Rust, Fortran
+    \item Deep learning knowledge using PyTorch/JAX.
+    \item Parallel programming using MPI/OMP.
+    \item GPU programming skills using CUDA (also paired with MPI).
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------------
+\section{Language}
+\begin{itemize}
+    \item English - C1 (103 TOEFL)
+    \item Polish - native speaker
+    \item German - A2/B1
+\end{itemize}
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}

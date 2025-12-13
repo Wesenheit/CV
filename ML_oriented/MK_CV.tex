@@ -1,0 +1,171 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{url}
+\usepackage[numbers]{natbib}
+\usepackage[colorlinks=true, citecolor=blue]{hyperref}
+\usepackage{parskip}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{supertabular}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\usepackage{fontawesome5}
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    }
+
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Mateusz Kapusta} \\[7.5pt]
+\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ Wesenheit} \ $|$ \
+\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ wesenheit.github.io} \ $|$ \
+\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ mr.kapusta@student.uw.udu.pl} \ $|$ \
+\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +48 530 510 849} \\
+\end{tabularx}
+
+%Interests/ Keywords/ Summary
+\section{Summary}
+I am a physicist and machine learning researcher involved in disciplinary research across
+physics/astronomy and computer science. I am mostly interested in advanced inference techniques and
+their potential application in the field of natural sciences.
+%Experience
+\section{Work Experience}
+
+\begin{joblong}{Machine Learning Research Intern — ASML, Veldhoven, NL}{Oct 2025 – June 2026}
+\item Developed advanced Bayesian models for diagnostics of ASML's EUV lithography systems.
+\item Integrated differentiable physical simulators with machine learning models to
+    enhance state-of-the-art physical modeling through learned corrections.
+\item Investigated diverse inference techniques for fast and reliable model inference,
+    ranging from traditional Bayesian methods to modern deep learning approaches.
+\item Research on efficient multi-GPU solutions for large-scale inference on HPC clusters.
+\end{joblong}
+
+
+\begin{joblong}{Quantitative Developer Intern - UBS AG}{Jul 2025 - September 2025}
+\item Working with the C++ high-performant Monte Carlo code used to value Lombard loans.
+\item Performance benchmarking, memory and speed optimizations.
+\item Reduced processing time $3$ times and reduced required memory $2$ times.
+\end{joblong}
+
+\begin{jobshort}{Research Assistant - University of Warsaw}{June 2022 - July 2025}
+Performing basic research in Astrophysical sciences (exoplanetary research, statistical methods in astronomy),
+written two first-pearson papers and one co-author paper. Research included:
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    \item applied research in astronomy, utilizing Bayesian methods, performing statistical
+        analysis \citep{ffp,dormant,depth},
+    \item imaging techniques on astronomical detectors \citep{ffp}.
+\end{itemize}
+\end{jobshort}
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Neural Posterior Estimation for Spectral Energy Distribution fitting} & \hfill \href{https://github.com/Wesenheit/Iris-ML}{Github} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Reaserching applications of Neural Posterior Estimation in Astronomy. Spectral Energy Distribution fitting is powerfull yet
+computationally expensive technique widelly used in Astronomy. I demonstrated that with the help of normalizing flows one can
+speed up the inference of parameters by several orders of magnitudes.
+To do so, I designed my own complex preprocessing model that was paried with Masked Autoregressive Flow.
+Model was then fined-tuned so it can operate on real-life astronomical data. \textbf{Model was accepted as
+poster at the ICML 2025 co-located workshop: Machine Learning for Astrophysics} \citep{irisML}.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Computational Fluid Dynamics on GPU-s} & \hfill \href{https://github.com/Wesenheit/Verona}{Github} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Astrophysical research heavilly rellies on the simulations. In the project, a Riemann
+solver was used to solve the equations of relativistic fluids, which are very common in astrophysical research.
+It is written in CUDA-enabled Julia code
+paralellized with MPI to utilize massive GPU clusters.
+It relies on manually written computational kernels that are optimized for A100 NVIDIA GPU-s
+(compute - memory bandwidth - communication).
+Project is being developed with the help of
+EuroHPC development access computing grant EHPC-DEV-2025D02-085 on the Leonardo BOOSTER, where I am a Co-PI.}  \\
+\end{tabularx}
+
+
+%---------------------------------------------------------------------------------- ------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+
+2020 - 2025 & Masters's Degree at \textbf{University of Warsaw} \hfill (GPA: 4.90/5.00) \newline
+Master's in Astrophysics with minor in Computer Science at the University of Warsaw as part of Interdysciplinary Collage of
+Interdysciplinary studies.
+
+Specialization: Machine Learning, High Performance Computing
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\bibliographystyle{aasjournal} % or apj, aasjournal, etc.
+\bibliography{MK}
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Awards \& Scholarships}
+  \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+      \item Gold medal at 2021 University Physics Competition (as part of the team representing Faculty of Physics)
+      \item Silver medal at the 1st Global e-Competition on Astronomy and Astrophysics (in place of 14th International Olympiad on Astronomy and Astrophysics), 2020
+      \item Bronze medal at 13th International Olympiad on Astronomy and Astrophysics, 2019 Hungary
+      \item Winner of 62th and 63th Polish Astronomy Olympiad for high school students
+      \item Finalist of 67th and 69th (11th place) Polish Physics Olympiad for high school students
+      \item Finalist of 70th Polish Mathematical Olympiad for high school students
+      \item Minister of Education's scholarship in the year 2018/2019, 2019/2020
+      \item Rector's scholarship in the academic year 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025
+  \end{itemize}
+
+    \section{OUTREACH}
+  \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+      \item Jury at the international math competition Naboj (March, 2025)
+      \item Jury at the international math competition Naboj (March, 2024)
+      \item Judge at the 16th International Olympiad on Astronomy and Astrophysics (August, 2023)
+      \item Jury at the international math competition Naboj (March, 2023)
+  \end{itemize}
+
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    ML related libraries &  \normalsize{PyTorch, Jax, Pyro, NumPyro, DVC, CUDA \& MPI}\\
+    Programing Languages &  \normalsize{Python, C++, Julia, Go}\\
+\end{tabularx}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
