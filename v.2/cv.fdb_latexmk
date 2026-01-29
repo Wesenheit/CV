@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1765659880.82384 "/Users/mitra/Files/Formal/CV/v.2/cv.tex" "cv.pdf" "cv" 1765659881.13984 0
-  "/Users/mitra/Files/Formal/CV/v.2/cv.tex" 1765659880.735 11385 ec23cc8cfc5e18c4342e35acdfb75b4c ""
+["pdflatex"] 1766015046.53624 "/Users/mitra/Files/Formal/CV/v.2/cv.tex" "cv.pdf" "cv" 1766015046.86113 0
+  "/Users/mitra/Files/Formal/CV/v.2/cv.tex" 1766015046.47195 11268 33b8a8676da880e6497e4d99f7f96237 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -75,7 +75,7 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1748544393 3345733 ff27586167bd14847a8d7785a4290606 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "cv.aux" 1765140092.66115 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "cv.tex" 1765659880.735 11385 ec23cc8cfc5e18c4342e35acdfb75b4c ""
+  "cv.tex" 1766015046.47195 11268 33b8a8676da880e6497e4d99f7f96237 ""
   "res.cls" 1765140092.66551 25067 51db6b686ca6154337999ed934d2e278 ""
   (generated)
   "cv.aux"
