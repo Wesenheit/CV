@@ -3,11 +3,12 @@
 \usepackage{tabularx}
 
 \usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 \usepackage{fontawesome}% <=============================================
 \usepackage{hyperref}
 \usepackage{wrapfig}
 \usepackage{graphicx}
+\usepackage{eurosym}
+\usepackage{comment}
 \setlength{\textwidth}{5.5in} % Text width of the document
 
 \begin{document}
@@ -20,9 +21,9 @@
 
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
 
-\moveleft.5\hoffset\centerline{Astronomical Observatory, University of Warsaw, Al. Ujazdowskie 4, 00-478 Warsaw,Poland}
-\moveleft.5\hoffset\centerline{\href{https://github.com/Wesenheit}{\faGithubSquare https://github.com/Wesenheit}}
-\moveleft.5\hoffset\centerline{\href{https://wesenheit.github.io/}{Website: https://wesenheit.github.io/}}
+%\moveleft.5\hoffset\centerline{Astronomical Observatory, University of Warsaw, Al. Ujazdowskie 4, 00-478 Warsaw,Poland}
+%\moveleft.5\hoffset\centerline{\href{https://github.com/Wesenheit}{\faGithubSquare https://github.com/Wesenheit}}
+%\moveleft.5\hoffset\centerline{\href{https://wesenheit.github.io/}{Website: https://wesenheit.github.io/}}
 %----------------------------------------------------------------------------------------
 
 \begin{resume}
@@ -31,7 +32,7 @@
 
 {\sl Master of Science, \textbf{2023-2026} (expected)}\\
 Master of Science in Astrophysics\\
-Warsaw University Observatory, Faculty of Physics\\
+University of Warsaw, Faculty of Physics, Poland\\
 
 {\sl Bachelor of Science, \textbf{2020-2023}}\\
 Inter-faculty Individual Studies in Mathematics and Natural Sciences, University of Warsaw, Poland\\
@@ -43,11 +44,13 @@ Minor: Computer Science \par
 
 
 {\sl Machine Learning Intern, ASML (Veldhoven, Netherlands)} \hfill October 2025 -- June 2026\\
-Working in the R\&D department on machine learning solutions for diagnosing degradation in NXE lithography machines (various contaminations in the optical column).
+Working in the D\&E department on machine learning solutions for diagnosing degradation in NXE lithography machines (various contaminations in the optical column).
 \begin{itemize}
     \item Researched hybrid models integrating physical simulations with machine learning, focusing on data-driven corrections to the physical models.
-    \item Implemented Bayesian inference algorithms to infer contamination profiles in the machines based on the hybrid models.
+    \item Implemented Bayesian inference algorithms to infer contamination profiles in the machines based on the hybrid models. Methods used: Variational Inference,
+    Normalizing flows, Variational Autoencoders.
     \item Developed high-performance implementations of inference algorithms, optimized for both edge devices (ordinary laptops) and large-scale HPC clusters.
+    \item Resulting method is considered for the production use with estimated cost-savings on order of $>20 \textrm{m \euro}$ per year.
 \end{itemize}
 
 {\sl Quantitative Developer Intern, UBS AG} \hfill July 2025 -- September 2025\\
@@ -58,8 +61,26 @@ Worked on a high-performance, multi-code C++ engine used to price loans within t
     \item Applied memory and computational optimizations, resulting in a codebase that was 3× faster and 2× more memory-efficient.
 \end{itemize}
 
+{\sl Student research assistant, Nicolaus Copernicus Astronomical Center} \hfill April 2023 - July 2025\\
+Working under supervision of Krzysztof Nalewajko (NCAC).
+Project in cooperation with Bart Ripperda (CITA, Toronto), Alexander Philippov (University of Maryland/Stanford University) and Agnieszka Janiuk (CFT, PAS).
+\begin{itemize}
+    \item Performing basic research in the field of the high energy astrophysics (plasma physics, physics of accretion).
+    \item Analyzing data from various HPC simulations starting from small scale local simulations up to global simulations.
+    \item Scientific code development, most of my work was centered around HPC visualization softwere that was used to analyze multi TB snapshots
+    from the simulations.
+    \item Performed work was presented in two second-author publications.
+\end{itemize}
 
-
+{\sl Student research assistant at Astronomical Observatory} \hfil July 2022 - July 2025\\
+Student position in grant 2021/41/B/ST9/00252, working under the supervision of Przemysław Mróz.
+\begin{itemize}
+    \item Performing basic research in the field of the observational astrophysics. Results include two first-author and one contributing-author publications.
+    \item Scientific code development, main activities include writing custom Bayesian inference software based on MCMC methods, analyzing various observational data
+    from various scientific surveys/telescopes including OGLE, Gaia, HST and more.
+    \item Scientific topics: Microlensing, binary stars.
+\end{itemize}
+\begin{comment}
 {\sl Student research assistant, Nicolaus Copernicus Astronomical Center} \hfill April 2023 - July 2025\\
 Working under supervision of Krzysztof Nalewajko (NCAC).
 Project in cooperation with Bart Ripperda (CITA, Toronto) and Alexander Philippov (University of Maryland).
@@ -110,6 +131,8 @@ Project: "Energy of a Strange Quark Star" under the supervision of Fatemeh Kayan
     \item Developed multi-threaded C++ code to calculate the equation of state of the magnetized strange matter.
 \end{itemize}
 
+
+\end{comment}
 \section{PROJECTS}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Neural Posterior Estimation for Spectral Energy Distribution fitting} & \hfill \href{https://github.com/Wesenheit/Iris-ML}{Github} \\[3.75pt]
@@ -133,9 +156,16 @@ Project is being developed with the help of
 EuroHPC development access computing grant EHPC-DEV-2025D02-085 on the Leonardo BOOSTER, where I am a Co-PI.}  \\
 \end{tabularx}
 
+\section{TALKS \& POSTERS}
+    \begin{itemize}
+        \item \textbf{M. Kapusta}: "IrisML: Neural Posterior Estimation for the Spectral Energy Distribution fitting"
+        ICML 2025: Machine learning for Astrophysics workshop.
+    \end{itemize}
 
 \section{PUBLICATIONS}
     \begin{itemize}
+        \item K.Nalewajko, \textbf{M.Kapusta}, B.Ripperda, A.Phillipov. "Distortion of a relativistic jet echoing a magnetic flux eruption"
+        Submitted in Astrophysical Journal
         \item \textbf{M. Kapusta}, P. Mroz, et al. "HST pre-imaging of a free-floating planet candidate microlensing event"
         Accepted in Astronomy \& Astrophysics \texttt{[arXiv:2507.01109]}
         \item K. Nalewajko, \textbf{M. Kapusta}, A. Janiuk "Chaotic Magnetic Disconnections Trigger Flux Eruptions in Accretion Flows Channeled onto Magnetically Saturated Kerr Black Holes"
@@ -146,11 +176,6 @@ EuroHPC development access computing grant EHPC-DEV-2025D02-085 on the Leonardo 
 
     \end{itemize}
 
-\section{TALKS \& POSTERS}
-    \begin{itemize}
-        \item \textbf{M. Kapusta}: "IrisML: Neural Posterior Estimation for the Spectral Energy Distribution fitting"
-        ICML 2025: Machine learning for Astrophysics workshop.
-    \end{itemize}
 
     \section{AWARDS \& SCHOLARSHIPS}
 
